@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Utility Classes</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .box {
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container mt-4">
+    <h2 class="text-center text-primary">Bootstrap Utility Classes</h2>
+
+    <!-- Flexbox Container with Spacing, Colors & Borders -->
+    <div class="d-flex flex-wrap justify-content-around align-items-center border border-primary shadow-lg p-3 bg-light">
+        <div class="box bg-info text-white border border-dark p-3 m-2">Box 1</div>
+        <div class="box bg-warning text-dark border border-danger rounded p-4 m-3">Box 2</div>
+        <div class="box bg-success text-white border border-primary rounded-circle p-3 m-2">Box 3</div>
+    </div>
+
+    <!-- Flexbox with Text Alignment, Visibility, and Position -->
+    <div class="d-flex justify-content-between align-items-start mt-4 border border-secondary p-4 bg-dark text-white">
+        <div class="box text-left">Left Box</div>
+        <div class="box text-right align-self-end ml-auto">Right</div> <!-- Fixed Position -->
+    </div>
+
+    <!-- Additional Spacing and Visibility Examples -->
+    <div class="d-flex justify-content-around align-items-center mt-4 border border-success p-4 bg-white">
+        <div class="box p-5 m-3 bg-danger text-white d-block">Visible Box</div>
+        <div class="box p-4 m-3 bg-secondary text-white d-md-none">Hidden on Medium Screens</div>
+        <div class="box p-3 m-3 bg-primary text-white d-inline-block">Inline Box</div>
+    </div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
