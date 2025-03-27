@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tooltip</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Tooltip</h1>
+                <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                    Hover me to see Tooltip
+                  </button>
+                  <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Tooltip on right">
+                    Hover me to see Tooltip
+                  </button>
+                  <button type="button" class="btn btn-success" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+                    Hover me to see Tooltip
+                  </button>
+                  <button type="button" class="btn btn-danger" data-toggle="tooltip" data-placement="left" title="Tooltip on left">
+                    Hover me to see Tooltip
+                  </button>
+                  <h1>Tooltip</h1>
+                  <p>Lorem ipsum dolor <a href="#" data-toggle="tooltip" title="This is a tooltip!">sit</a> consectetur <a href="#" data-toggle="tooltip" title="This is a tooltip!">and</a> adipisicing elit. Nostrum blanditiis repudiandae dolor debitis nemo pariatur sunt, reiciendis, <a href="#" data-toggle="tooltip" title="This is a tooltip!">then</a> quaerat, doloremque soluta placeat odio ut? Quisquam maiores impedit nihil voluptatibus temporibus. Recusandae?
+                </p>
+                
+            </div>
+        </div>
+    </div>
+    
+    
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+<script>
+    $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+</body>
+</html>
