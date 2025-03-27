@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Popover</h1>
+                <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Greeting" data-content="Hello, this is mahek!!">Click to toggle popover</button>
+                <h1>Different popvers</h1>
+                <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-content="This is naaz.">
+                    Popover on top
+                  </button>
+                  
+                  <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="right" data-content="This is fatima.">
+                    Popover on right
+                  </button>
+                  
+                  <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="bottom" data-content="This is Mahek.">
+                    Popover on bottom
+                  </button>
+                  
+                  <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="left" data-content="This is Miss.">
+                    Popover on left
+                  </button>
+            </div>
+        </div>
+    </div>
+    
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+<script>
+    $(function () {
+  $('[data-toggle="popover"]').popover({
+    container: 'body'
+  })
+})
+</script>
+</body>
+</html>
